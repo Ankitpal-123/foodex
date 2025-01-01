@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #ececec;
+  height: 100vh;
+}
+
+/* #footer::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background-color: white;
+  top: auto;
+  bottom: auto;
+  margin-top: 10%;
+  left: 10%;
+  border: 100%;
+  border-radius: 100%;
+} */
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  background: #ececec;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 50px;
+}
