@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
+import bannerimg from "../assets/banner-img.png";
 
 const Herobanner = () => {
   const [search, setSearch] = useState("");
@@ -10,18 +11,18 @@ const Herobanner = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto py-10 px-5 flex justify-around align-center">
+    <div className="max-w-7xl mx-auto py-10 px-7 flex justify-around align-center">
       <div className="">
-        <h1 className="font-bold text-4xl w-[40%]">
-          Hungry? Let's Deliver Happiness to Your <br />
-          <span className="text-[rgb(255,107,91)]">Doorstep!</span>
+        <h1 className="font-bold text-4xl w-[65%]">
+          Hungry? Let's Deliver Happiness to Your
+          <span className="text-[rgb(255,107,91)]"> Doorstep!</span>
         </h1>
-        <p className="text-xl mt-10 w-[50%]">
+        <p className="text-xl mt-5 w-[70%]">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates,
           iusto! Reprehenderit repudiandae veritatis dolore impedit ratione fuga
           esse ipsam magnam exercitationem. Itaque, ad.
         </p>
-        <div className="flex bg-white w-[20%] rounded-full mt-10 items-center h-10 border border-[rgb(255,107,91)]">
+        <div className="flex bg-white w-[30%] rounded-full mt-10 items-center h-10 border border-[rgb(255,107,91)]">
           <input
             type="text"
             className="bg-transparent text-sm ml-5 text-ellipsis outline-none placeholder:text-[12px] placeholder:font-semibold placeholder:text-black"
@@ -29,7 +30,7 @@ const Herobanner = () => {
             value={search}
             placeholder="Search Foods"
           />
-          <CiSearch className="text-xl text-[rgb(255,107,91)] font-bold ml-5 cursor-pointer" />
+          <CiSearch className="text-xl text-[rgb(255,107,91)] font-bold ml-5 cursor-pointer w-6 h-6" />
         </div>
 
         <div className="flex gap-5 mt-5">
@@ -40,6 +41,9 @@ const Herobanner = () => {
             NON-VEG
           </p>
         </div>
+      </div>
+      <div className="mr-20">
+        <img src={bannerimg} alt="Home food" />
       </div>
     </div>
   );
